@@ -1,0 +1,79 @@
+/* Styles for headings and paragraphs */
+h1, h2, h3, p, button {
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the header */
+header {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add margin between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+}
+
+/* Styles for the main content */
+main {
+    padding: 20px; /* Add padding */
+}
+
+/* Styles for tables */
+table {
+    width: 90%; /* Set width to 90% */
+    margin: 0 auto; /* Center align the table */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Add border */
+    padding: 8px; /* Add padding */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light background color for table header */
+}
+
+/* Styles for buttons */
+button {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove border */
+}
+
+button:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+/* Styles for containers */
+.container {
+    width: 80%; /* Set width to 80% */
+    margin: 0 auto; /* Center align the container */
+}
+
+/* Styles for quantity row */
+.quantity-row {
+    display: none; /* Hide quantity row by default */
+}
+
+/* Center align Pay Online and Place Order */
+.center-align {
+    text-align: center; /* Align text to the center */
+}

@@ -1,0 +1,86 @@
+/* Styles for headings and paragraphs */
+h1, h2, h3, p {
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the header */
+header {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add margin between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+}
+
+/* Styles for anchor links */
+a {
+    margin-top: 20px; /* Add margin on top */
+    text-decoration: none; /* Remove underline */
+    color: #1158cb; /* Text color */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Styles for forms */
+form {
+    max-width: 400px; /* Set maximum width */
+    margin: 0 auto; /* Center align the form */
+}
+
+/* Styles for labels */
+label {
+    display: block; /* Display labels as blocks */
+    margin-bottom: 8px; /* Add margin below labels */
+}
+
+/* Styles for text inputs, password inputs, and select elements */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%; /* Set width to 100% */
+    padding: 8px; /* Add padding */
+    margin-bottom: 15px; /* Add margin below inputs */
+}
+
+/* Styles for buttons */
+button {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer */
+    border: none; /* Remove border */
+}
+
+/* Hover styles for buttons */
+button:hover {
+    background-color: #555; /* Darken background color on hover */
+}
+
+.signup-button:hover {
+    background-color: #45a049; /* Darken background color for signup button on hover */
+}
+
+.login-button:hover {
+    background-color: #ffffff; /* Change background color for login button on hover */
+}
+
+/* Styles for login link */
+.login-link {
+    display: inline-block; /* Display as inline-block */
+    vertical-align: middle; /* Align vertically in the middle */
+    margin-left: 10px; /* Add margin on the left */
+}

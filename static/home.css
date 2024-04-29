@@ -1,0 +1,117 @@
+/* Styles for headings */
+h1, h2, h3 {
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the header */
+header {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles to hide the scrollbar */
+body::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar */
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add margin between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+}
+
+/* Styles for anchor links */
+a {
+    margin-top: 20px; /* Add margin on top */
+    text-decoration: none; /* Remove underline */
+    color: #1158cb; /* Text color */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Styles for the main content */
+main {
+    padding: 20px; /* Add padding */
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the container */
+.container {
+    width: 80%; /* Set width to 80% */
+    margin: 0 auto; /* Center align the container */
+}
+
+/* Styles for the featured items grid */
+.featured-items-grid {
+    display: flex; /* Display items in a flex container */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center align items */
+}
+
+/* Styles for featured items */
+.featured-item {
+    width: 200px; /* Set width */
+    margin: 10px; /* Add margin */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    text-align: center; /* Align text to the center */
+}
+
+.featured-item img {
+    width: 100%; /* Set width to 100% */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 5px; /* Add border radius */
+}
+
+.featured-item h3 {
+    margin-top: 10px; /* Add margin on top */
+}
+
+.featured-item p {
+    margin-top: 5px; /* Add margin on top */
+}
+
+/* Styles for the blog posts grid */
+.blog-posts-grid {
+    display: flex; /* Display items in a flex container */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center align items */
+}
+
+/* Styles for blog posts */
+.blog-post {
+    width: 200px; /* Set width */
+    margin: 10px; /* Add margin */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    text-align: center; /* Align text to the center */
+}
+
+.blog-post img {
+    width: 100%; /* Set width to 100% */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 5px; /* Add border radius */
+}
+
+.blog-post h3 {
+    margin-top: 10px; /* Add margin on top */
+}
+
+.blog-post p {
+    margin-top: 5px; /* Add margin on top */
+}

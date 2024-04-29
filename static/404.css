@@ -1,0 +1,129 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,800");
+
+/* Styles for the error container */
+.error-container {
+    text-align: center; /* Align text to the center */
+    font-size: 180px; /* Set font size */
+    font-family: "Catamaran", sans-serif; /* Specify font family */
+    font-weight: 800; /* Set font weight */
+    margin: 20px 15px; /* Add margin */
+}
+
+/* Styles for the text inside error container */
+.error-container > span {
+    display: inline-block; /* Display as inline block */
+    line-height: 0.7; /* Set line height */
+    position: relative; /* Position relative */
+    color: #FFB485; /* Set text color */
+}
+
+/* Styles for the nested spans inside error container */
+.error-container > span > span {
+    display: inline-block; /* Display as inline block */
+    position: relative; /* Position relative */
+}
+
+/* Styles for first span inside error container */
+.error-container > span:nth-of-type(1) {
+    perspective: 1000px; /* Set perspective */
+    perspective-origin: 500% 50%; /* Set perspective origin */
+    color: #F0E395; /* Set text color */
+}
+
+/* Styles for nested span inside first span */
+.error-container > span:nth-of-type(1) > span {
+    transform-origin: 50% 100% 0px; /* Set transform origin */
+    transform: rotateX(0); /* Initial rotation */
+    animation: easyoutelastic 8s infinite; /* Apply animation */
+}
+
+/* Styles for third span inside error container */
+.error-container > span:nth-of-type(3) {
+    perspective: none; /* Remove perspective */
+    perspective-origin: 50% 50%; /* Set perspective origin */
+    color: #D15C95; /* Set text color */
+}
+
+/* Styles for nested span inside third span */
+.error-container > span:nth-of-type(3) > span {
+    transform-origin: 100% 100% 0px; /* Set transform origin */
+    transform: rotate(0deg); /* Initial rotation */
+    animation: rotatedrop 8s infinite; /* Apply animation */
+}
+
+/* Keyframes for the first animation */
+@keyframes easyoutelastic {
+    0% {
+        transform: rotateX(0); /* Initial rotation */
+    }
+    /* Other keyframes */
+}
+
+/* Keyframes for the second animation */
+@keyframes rotatedrop {
+    0% {
+        transform: rotate(0); /* Initial rotation */
+    }
+    /* Other keyframes */
+}
+
+/* Reset styles */
+* {
+    -webkit-box-sizing: border-box; /* Set box-sizing */
+    -moz-box-sizing: border-box; /* Set box-sizing */
+    box-sizing: border-box; /* Set box-sizing */
+}
+
+/* Body styles */
+body {
+    background-color: #f4f4f4; /* Set background color */
+    margin-bottom: 50px; /* Add margin to the bottom */
+}
+
+/* Styles for HTML elements */
+html,
+button,
+input,
+select,
+textarea {
+    font-family: "Montserrat", Helvetica, sans-serif; /* Specify font family */
+    color: #bbb; /* Set text color */
+}
+
+/* Styles for heading */
+h1 {
+    text-align: center; /* Align text to the center */
+    margin: 30px 15px; /* Add margin */
+}
+
+/* Styles for zoom area */
+.zoom-area {
+    max-width: 490px; /* Set max width */
+    margin: 30px auto 30px; /* Add margin */
+    font-size: 19px; /* Set font size */
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for link container */
+.link-container {
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for more link */
+a.more-link {
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-size: 13px; /* Set font size */
+    background-color: #bbb; /* Set background color */
+    padding: 10px 15px; /* Add padding */
+    border-radius: 0; /* Add border radius */
+    color: #fff; /* Set text color */
+    display: inline-block; /* Display as inline block */
+    margin-right: 5px; /* Add margin */
+    margin-bottom: 5px; /* Add margin */
+    line-height: 1.5; /* Set line height */
+    text-decoration: none; /* Remove underline */
+    margin-top: 50px; /* Add margin */
+    letter-spacing: 1px; /* Set letter spacing */
+}

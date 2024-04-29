@@ -1,0 +1,93 @@
+/* Styles for headings and paragraphs */
+h1, h2, h3, p {
+    text-align: center; /* Align text to the center */
+}
+
+/* Hide scrollbar for WebKit browsers */
+body::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+}
+
+/* Styles for the header */
+header {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Align text to the center */
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add margin between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+}
+
+/* Styles for links */
+a {
+    margin-top: 20px; /* Add margin to the top */
+    text-decoration: none; /* Remove underline */
+    color: #1158cb; /* Text color */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Styles for forms */
+form {
+    max-width: 400px; /* Set maximum width */
+    margin: 0 auto; /* Center align the form */
+}
+
+/* Styles for labels */
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 8px; /* Add margin at the bottom */
+}
+
+/* Styles for input fields and select */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%; /* Set width to 100% */
+    padding: 8px; /* Add padding */
+    margin-bottom: 15px; /* Add margin at the bottom */
+}
+
+/* Styles for buttons */
+button {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove border */
+}
+
+button:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+/* Styles for the map section */
+.map-section {
+    margin-top: 20px; /* Add margin to the top */
+}
+
+/* Styles for the map container */
+.map-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    height: 450px; /* Set height of the map container */
+}
+
+.map-container iframe {
+    width: 80%; /* Set width of the iframe */
+    height: 50%; /* Set height of the iframe */
+}
