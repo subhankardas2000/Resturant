@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sharma's Cafe</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <!-- Restaurant name and navigation -->
+            <h1>Sharma's Cafe</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/login">Account</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Banner section -->
+        <section class="banner">
+            <div class="banner-content">
+                <!-- Banner title and description -->
+                <h2>Welcome to Sharma's Cafe</h2>
+                <p>Experience the best of Indian cuisine in a cozy atmosphere. Welcome to Sharma's Cafe! I'm Sharma, the owner of the Restaurant.</p>
+                <p>Feel free to explore our Menu and dishes. If you have any questions or want to connect, don't hesitate to reach us</p>
+            </div>
+        </section>        
+
+        <!-- Featured items section -->
+        <section class="featured-items">
+            <div class="container">
+                <!-- Featured items title -->
+                <h2>Featured Items</h2>
+                <!-- Grid for featured items -->
+                <div class="featured-items-grid">
+                    <!-- Featured item 1 -->
+                    <div class="featured-item">
+                        <img src="{{ url_for('static', filename='img/dish1.jpg') }}" alt="Butter Chicken" width="200" height="200">
+                        <h3>Butter Chicken</h3>
+                        <p>A classic Indian dish made with tender chicken cooked in a rich and creamy tomato-based sauce.</p>
+                    </div>
+                    <!-- Featured item 2 -->
+                    <div class="featured-item">
+                        <img src="{{ url_for('static', filename='img/dish2.jpg') }}" alt="Tandoori Naan" width="200" height="200">
+                        <h3>Tandoori Naan</h3>
+                        <p>Soft and fluffy bread cooked in a traditional clay oven, perfect for scooping up flavorful curries.</p>
+                    </div>
+                    <!-- Add more featured items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog section -->
+        <section>
+            <h2>Welcome to Our Blog Site!</h2>
+            <p>Discover interesting articles, insights, and more.</p>
+        </section>
+
+        <!-- Blog posts section -->
+        <!-- Post 1 -->
+        <section class="blog-posts">
+            <div class="container blog-posts-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-post">
+                    <img src="{{ url_for('static', filename='img/post1.jpg') }}" alt="Image 1">
+                    <p>This is the content of your first blog post. Feel free to write about any topic that interests you.</p>
+                </div>
+    
+                <!-- Blog Post 2 -->
+                <div class="blog-post">
+                    <img src="{{ url_for('static', filename='img/post2.jpg') }}" alt="Image 2">
+                    <p>This is the content of your second blog post. You can share your thoughts, experiences, or any valuable information.</p>
+                </div>
+    
+                <!-- Blog Post 3 -->
+                <div class="blog-post">
+                    <img src="{{ url_for('static', filename='img/post3.jpg') }}" alt="Image 3">
+                    <p>This is the content of your third blog post. Write about anything that you find interesting or informative.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="background">
+        <p style="text-align : center" class="text-footer">
+            2024 © All rights are reserved
+        </p>
+    </footer>
+</body>
+</html>

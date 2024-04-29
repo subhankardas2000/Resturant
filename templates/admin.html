@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin : Sharma's Cafe</title>
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+
+<body>
+<header>
+    <!-- Header section with container -->
+    <div class="container">
+        <!-- Title for admin interface -->
+        <h1>Admin Interface</h1>
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+{% block content %}
+<!-- Main content section -->
+<!-- Display customer orders -->
+<h3>Customer Orders</h3>
+<table class="admin-table">
+    <thead>
+        <tr>
+            <!-- Table headers -->
+            <th>Username</th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Payment Method</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+            <!-- Table rows for each order -->
+            <tr>
+                <td>{{ order[0] }}</td>
+                <td>{{ order[1] }}</td>
+                <td>${{ order[2] }}</td>
+                <td>{{ order[3] }}</td>
+                <td>{% if order[4] %}Online{% else %}Cash{% endif %}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br>
+<!-- Display existing menu items -->
+<h3>Menu</h3>
+<table class="admin-table">
+    <thead>
+        <tr>
+            <!-- Table headers -->
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in menu_items %}
+            <!-- Table rows for each menu item -->
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>${{ item[1] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br>
+
+<h3>Customer Messages</h3>
+<table class="admin-table">
+    <thead>
+        <tr>
+            <!-- Table headers -->
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for message in messages %}
+        <!-- Table rows for each customer message -->
+        <tr>
+            <td>{{ message[1] }}</td>
+            <td>{{ message[2] }}</td>
+            <td>{{ message[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+
+</body>
+</html>

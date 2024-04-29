@@ -1,0 +1,32 @@
+<!-- order_confirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation : Sharma's Cafe</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading for order confirmation -->
+        <h1>Order Confirmation</h1>
+        <!-- Success message -->
+        <p>Your order has been placed successfully!</p>
+        <!-- Order details -->
+        <h3>Order Details</h3>
+        <ul>
+            <!-- Displaying item, quantity, total price, and payment method -->
+            <li>Item: {{ order.item }}</li>
+            <li>Quantity: {{ order.quantity }}</li>
+            <li>Total Price: ${{ order.total_price }}</li>
+            <li>Payment Method: {% if order.is_online_payment %}Online{% else %}Cash{% endif %}</li>
+        </ul>
+        <!-- Thank you message -->
+        <p>Thank you for choosing Sharma's Cafe!</p>
+    </div>
+</body>
+</html>

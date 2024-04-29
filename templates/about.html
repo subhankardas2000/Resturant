@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us : Sharma's Cafe</title>
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="content"></div>
+            <!-- Header content: title and navigation -->
+            <h1>About Page</h1>
+            <nav>
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/login">Account</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <br>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Outlet information section -->
+        <section>
+            <h2>Our Outlet</h2>
+            <!-- Outlet addresses -->
+            <p>Barasat : Kajipara Road, Barasat, Kolkata-124, West Bengal</p>
+            <p>Kolkata : Ecospace, Action Area II, Newtown, Kolkata-156, West Bengal</p>
+
+            <!-- About Us section -->
+            <h2>About Us</h2>
+            <!-- Contact information -->
+            <p>Phone : +91 9876543210</p>
+            <p>Email : aboutus@sharmascafe.com</p>
+        </section>
+
+        <!-- Map section -->
+        <section class="map-section">
+            <!-- Heading for the map section -->
+            <h2 class="location-heading">Location</h2>
+            <!-- Map container -->
+            <div class="map-container">
+                <!-- Google Maps embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.937843541708!2d87.59054159999995!3d21.97534850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02d34e97cbda23%3A0x5e44befbedcf3d07!2sMiraCurAll%20Consultancy%20Services!5e0!3m2!1sen!2sin!4v1714216527759!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

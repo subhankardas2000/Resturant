@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact : Sharma's Cafe</title>
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- Header section with container -->
+        <div class="container">
+            <!-- Title for contact page -->
+            <h1>Contact Us</h1>
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/login">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+
+    <!-- Form container -->
+    <div class="form-container">
+        <!-- Title for the form -->
+        <h2>Get in Touch</h2>
+        <!-- Instruction for the form -->
+        <p>Use the form below to get in touch with us.</p>
+        <!-- Form for submitting messages -->
+        <form action="{{ url_for('contact') }}" method="POST" class="center-form">
+            <!-- Input field for name -->
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+            <!-- Input field for email -->
+            <input type="email" id="email" name="email" required placeholder="Enter Your Email ID">
+            <!-- Input field for message -->
+            <input type="text" id="message" name="message" required placeholder="Drop a comment/feedback for us...">
+            <!-- Submit button -->
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

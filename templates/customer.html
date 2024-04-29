@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer : Sharma's Cafe</title>
+
+    <!-- Script and stylesheet links -->
+    <script src="{{ url_for('static', filename='customer.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='customer.css') }}">
+</head>
+
+<body>
+<header>
+    <!-- Header section with container -->
+    <div class="container">
+        <!-- Title for customer interface -->
+        <h1>Customer Interface</h1>
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Menu section -->
+<h3>Menu</h3>
+<form method="POST" action="{{ url_for('customerorder') }}" id="item-selection-form">
+    <!-- CSRF token -->
+    {{ form.csrf_token }}
+    <!-- Table for displaying menu items -->
+    <table class="menu-table">
+        <thead>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Select</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <!-- Loop through menu items -->
+        {% for item in menu %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>${{ item[1] }}</td>
+                <!-- Checkbox for selecting item -->
+                <td><input type="checkbox" name="selected_items[]" value="{{ item[0] }}" data-price="{{ item[1] }}" onchange="updateQuantityRow(this)"></td>
+            </tr>
+            <!-- Quantity row -->
+            <tr class="quantity-row">
+                <td colspan="3">
+                    <!-- Label and input for quantity -->
+                    <label>Quantity:</label>
+                    <input type="number" name="quantities[]" min="1" max="10" value="1">
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="center-align"> <!-- Center align start -->
+        <!-- Checkbox for online payment -->
+        <div class="form-group form-check">
+            {{ form.online_payment(class="form-check-input") }}
+            <label class="form-check-label" for="online_payment">Pay Online</label>
+        </div>
+
+        <!-- Submit button for placing order -->
+        <button type="submit" class="Place-order">Place Order</button>
+    </div> <!-- Center align end -->
+</form>
+
+</body>
+</html>

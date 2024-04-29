@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Successfully : Sharma's Cafe</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <!-- Internal style for centering the section -->
+    <style>
+        section {
+            text-align: center; /* Aligning text to the center */
+            margin: auto; /* Centering the section horizontally */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <!-- Restaurant name and navigation -->
+            <h1>Get in Touch</h1>
+            <nav>
+                <ul>
+                    <!-- Home, About, and Account links -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/login">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Success message -->
+    <h2>Message sent Successfully</h2>
+</body>
+</html>

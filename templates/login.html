@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in : Sharma's Cafe</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <!-- Restaurant name and navigation -->
+            <h1>Log in Interface</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <br>
+
+    <div class="container">
+        <!-- Login form -->
+        <form method="post">
+            <!-- CSRF token -->
+            {{ form.csrf_token }}
+            <!-- Username field -->
+            <label for="username">Username:</label>
+            {{ form.username }}
+            <!-- Password field -->
+            <label for="password">Password:</label>
+            {{ form.password }}
+            <!-- User type field -->
+            <label for="user_type">User Type:</label>
+            {{ form.user_type }}
+            <!-- Login button -->
+            <button type="submit" class="login-button">Login</button> 
+        </form>
+        
+        <!-- Signup link -->
+        <p>Don't have an account? <a href="/signup" class="signup-button">Sign Up</a></p>
+    </div>
+</body>
+</html>
